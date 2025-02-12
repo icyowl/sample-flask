@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<head></head>
+<body>
+  <h1>Hello from Koyeb</h1>
+  {% if names %}
+    {% for name in names %}
+      <h2>and hello to {{ name['name'] }}</h2>
+    {% endfor %}
+  {% endif %}
+</body>
+</html>
