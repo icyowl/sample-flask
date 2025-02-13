@@ -10,10 +10,10 @@ client = MongoClient(uri)
 @app.route('/')
 @app.route('/<name>')
 def hello(name=None):
-    res = None
+    message = ''
     try:
         client.admin.command('ping')
-        res = 'You successfully connected to MongoDB!'
+        message = 'You successfully connected to MongoDB!'
     except Exception as e:
-        res = e
-    return render_template('hello.html', name=name, res=res)
+        message = e
+    return render_template('hello.html', name=name, message=message)
