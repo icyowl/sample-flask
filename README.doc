@@ -1,0 +1,7 @@
+# install
+
+```shell
+pip install flask gunicorn pymongo pytest
+pip install Flask-WTF
+pip install flask-login
+```

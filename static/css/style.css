@@ -1,0 +1,42 @@
+:root {
+  --milk: #F8F9FB;
+  --pale-cyan: #F3F3FB;
+  --earthy-green: #8A9B6E;
+  --cyprus: #004D40;
+
+  --gray30: hsl(0 0 30%);
+  --gray40: hsl(0 0% 40%);
+  --gray60: hsl(0 0 60%);
+  --gray90: hsl(0 0 90%); 
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* a svg {
+  color: var(--gray40);
+} */
+
+.btn {
+  padding: 5px 10px;
+}
+
+.btnx-outline {
+  color: var(--cyprus); background: #fff; border: 2px solid var(--earthy-green);
+}
+
+.btnx-outline-teal{
+  color: #004D40; background:var(--bs-white); border: 2px solid #80CBC4;         
+}
+
+.btnx-outline-lime{
+  color: #827717; background:var(--bs-white); border: 2px solid #C5E1A5;         
+}
+
+/* #password:focus {
+  border: 2px solid var(--earthy-green);
+  box-shadow: 0 0 8px rgb(138 155 110 / 0.5);
+} */

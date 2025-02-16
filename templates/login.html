@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+  <div class="mt-5 text-center">
+    <h1 class="h3 mb-4 font-weight-normal">Icyow's farm</h1>
+    <form method="POST"> 
+      {{ form.csrf_token }} 
+      <div class="mb-2">
+        {{ form.username(size=20, placeholder="Your Name") }}
+      </div>
+      <div class="mb-3">
+        {{ form.password(size=20, placeholder="Password") }}
+      </span>
+        </div>
+      <input class="btn btn-outline-secondary" type="submit" value="Sign in">
+    </form>
+    <div class="mt-4">{{ msg }}</div>
+  </div>
+{% endblock %}

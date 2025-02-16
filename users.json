@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "pw": "scrypt:32768:8:1$hZd54Hjb9vkQspDU$13c6386d86a88f52ba9700d664f197a43d9da1065677ef083e7013d1fbc5b6af26216a78cea13e539e44f1d74051ae5e3fc65a6f2f07ddc48389bce3693fb227"
+  }
+]
