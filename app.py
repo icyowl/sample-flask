@@ -54,8 +54,13 @@ def logout():
 import click
 
 @click.command('test-command')
-def init_db_command():
+def init_test_command():
     click.echo('Initialized the database.')
+
+def init_app(app):
+    app.cli.add_command(init_test_command)
+
+init_app(app)
 
 if __name__ == '__main__':
     app.debug=True
