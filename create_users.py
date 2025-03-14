@@ -12,6 +12,6 @@ data = [
 for d in data:
     d['pw'] = generate_password_hash(d['pw'])
 
-with open('users.json', 'w') as f:
+with open('instance/users.json', 'w') as f:
     json.dump(data, f, indent=2)
 
