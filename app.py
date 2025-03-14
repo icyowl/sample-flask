@@ -7,7 +7,7 @@ from flask_login import LoginManager, UserMixin, login_required, login_user, log
 
 app = Flask(__name__)
 
-app.secret_key = 'mysecretkey'
+app.secret_key = 'mysecret'
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = "login"
