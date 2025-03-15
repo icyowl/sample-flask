@@ -29,9 +29,7 @@ class LoginForm(FlaskForm):
 @app.route('/')
 @login_required
 def index():
-    # os.environ['Alice'] = 'mockturtle'
     res = os.path.exists('instance/config.py')
-    # print(res)
     pw = os.environ.get('Alice')
     return render_template('index.html', pw=pw, res=res)
 
