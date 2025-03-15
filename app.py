@@ -4,8 +4,10 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField
 from werkzeug.security import check_password_hash
 from flask_login import LoginManager, UserMixin, login_required, login_user, logout_user, current_user
+import os
 
 app = Flask(__name__)
+
 
 app.secret_key = 'mysecret'
 login_manager = LoginManager()
@@ -27,7 +29,9 @@ class LoginForm(FlaskForm):
 @app.route('/')
 @login_required
 def index():
-    return render_template('index.html')
+    # os.environ['Alice'] = 'mockturtle'
+    pw = os.environ.get('Alice')
+    return render_template('index.html', pw=pw)
 
 @app.route('/login', methods=['GET','POST'])
 def login():
