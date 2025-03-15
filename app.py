@@ -36,7 +36,7 @@ def index():
 @app.route('/login', methods=['GET','POST'])
 def login():
     form = LoginForm()
-    db = json.load(open('instance/users.json', 'r'))
+    db = json.load(open('users.json', 'r'))
     if request.method == 'POST':
         username = form.username.data
         (id, pw_hash), = [(x['id'], x['pw']) for x in db if x['name'] == username]
